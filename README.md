@@ -23,7 +23,7 @@ We release three models: VirConv-L, VirConv-T and VirConv-S.
 * The results are the 3D AP(R40) of Car on the *val* set of KITTI dataset.
 
 **Important notes:**
-* **The input voxel discard has been changed to [input point discard](https://github.com/hailanyi/VirConv/pcdet/datasets/dataset.py) for faster voxelization.**
+* **The input voxel discard has been changed to [input point discard](https://github.com/hailanyi/VirConv/blob/master/pcdet/datasets/dataset.py) for faster voxelization.**
 * **The convergence of VirConv-T is somewhat unstable, we recommend VirConv-S, which can achieve 90+ AP easily.**
 
 Train multiple times and choose the best:
