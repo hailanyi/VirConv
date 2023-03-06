@@ -24,23 +24,24 @@ We release three models: VirConv-L, VirConv-T and VirConv-S.
 
 **Important notes:**
 * **The input voxel discard has been changed to [input point discard](https://github.com/hailanyi/VirConv/blob/master/pcdet/datasets/dataset.py) for faster voxelization.**
-* **The convergence of VirConv-T is somewhat unstable, we recommend VirConv-S, which can achieve 90+ AP easily.**
+* **The convergence of VirConv-T is somewhat unstable ( AP~\[89.5,90.3\]), if you cannot achieve similar AP, please try multiple times. We recommend VirConv-S, which can achieve 90.5+ AP easily.**
+* **These models are not suitable to directly report results on KITTI *test* set, please train the models on all or 80% training data and choose a good score threshold to achieve a desirable performance.**
 
-Train multiple times and choose the best:
+Train multiple times on 8xV100 and choose the best:
 
-Environment|              Detector                   | GPU (train)| Easy | Mod. | Hard  | download | 
+Environment|              Detector                   | GPU (train)| Easy | Mod. \[AP range\] | Hard  | download | 
 |------|---------------------------------------------|:----------:|:-------:|:-------:|:-------:|:---------:|
-|Spconv1.2 + 8xV100| [VirConv-L](tools/cfgs/models/kitti/VirConv-L.yaml)|~7 GB | 93.08 |88.51 |86.69 | [google](https://drive.google.com/file/d/1UwH4ArmKCAPlFV6XjRmVrqClgrvc1M1q/view?usp=sharing) / [baidu(05u2)](https://pan.baidu.com/s/1Q-hvk-u6bA72EFhcc5IIwA) / 51M| 
-|Spconv1.2 + 8xV100| [VirConv-T](tools/cfgs/models/kitti/VirConv-T.yaml)|~13 GB| 94.58 |89.87 |87.78 | [google](https://drive.google.com/file/d/1Y3Q0x0pDran0Bqqg1CulL0geYwIkDQvu/view?usp=sharing) / [baidu(or81)](https://pan.baidu.com/s/1CkMi5YYKjBfi4sgnx20fIw) / 55M|
-|Spconv1.2 + 8xV100| [VirConv-S](tools/cfgs/models/kitti/VirConv-S.yaml)|~13 GB| 95.67 |91.09 |89.09 | [google](https://drive.google.com/file/d/1_IUkMzGlPdZTiCyiBn1GaCMYKVbi9Oh2/view?usp=sharing) / [baidu(ak74)](https://pan.baidu.com/s/1PZURrn97OoFQyBGb0hJX3A) / 62M|
+|Spconv1.2 | [VirConv-L](tools/cfgs/models/kitti/VirConv-L.yaml)|~7 GB | 93.08 |88.51 |86.69 | [google](https://drive.google.com/file/d/1UwH4ArmKCAPlFV6XjRmVrqClgrvc1M1q/view?usp=sharing) / [baidu(05u2)](https://pan.baidu.com/s/1Q-hvk-u6bA72EFhcc5IIwA) / 51M| 
+|Spconv1.2 | [VirConv-T](tools/cfgs/models/kitti/VirConv-T.yaml)|~13 GB| 94.58 |89.87 |87.78 | [google](https://drive.google.com/file/d/1Y3Q0x0pDran0Bqqg1CulL0geYwIkDQvu/view?usp=sharing) / [baidu(or81)](https://pan.baidu.com/s/1CkMi5YYKjBfi4sgnx20fIw) / 55M|
+|Spconv1.2 | [VirConv-S](tools/cfgs/models/kitti/VirConv-S.yaml)|~13 GB| 95.67 |91.09 |89.09 | [google](https://drive.google.com/file/d/1_IUkMzGlPdZTiCyiBn1GaCMYKVbi9Oh2/view?usp=sharing) / [baidu(ak74)](https://pan.baidu.com/s/1PZURrn97OoFQyBGb0hJX3A) / 62M|
 
-Train multiple times and choose the best:
+Train multiple times on 8xV100 and choose the best:
 
-Environment|              Detector                   |GPU (train) | Easy | Mod. | Hard  | download | 
+Environment|              Detector                   |GPU (train) | Easy | Mod. \[AP range\] | Hard  | download | 
 |------|---------------------------------------------|:----------:|:-------:|:-------:|:-------:|:---------:|
-|Spconv2.1 + 8xV100| [VirConv-L](tools/cfgs/models/kitti/VirConv-L.yaml)|~7 GB | 93.18 |88.23 |85.48 | [google](https://drive.google.com/file/d/1MRRgMX8l5FFaFZb81YjqfcjCFgYYDMak/view?usp=sharing) / [baidu(k2dp)](https://pan.baidu.com/s/1fOSbDup5x2pootf3dtPb8Q) / 51M| 
-|Spconv2.1 + 8xV100| [VirConv-T](tools/cfgs/models/kitti/VirConv-T.yaml)|~13 GB| 94.91 |90.36 |88.10 | [google](https://drive.google.com/file/d/123ndzJIwo01DvQIBzy_GnussuuXkhwji/view?usp=sharing) / [baidu(a4r4)](https://pan.baidu.com/s/1ueAUwj57DIEgF7NBKtgCmA) / 56M|
-|Spconv2.1 + 8xV100| [VirConv-S](tools/cfgs/models/kitti/VirConv-S.yaml)|~13 GB| 95.76 |90.91 |88.61 | [google](https://drive.google.com/file/d/1-ztIQdhAi2MnTI6pBKxUeqWZnwlDxDH3/view?usp=sharing) / [baidu(j3mi)](https://pan.baidu.com/s/1iJUjR7IehRBk1WSacvd2Yg) / 56M|
+|Spconv2.1 | [VirConv-L](tools/cfgs/models/kitti/VirConv-L.yaml)|~7 GB | 93.18 |88.23 |85.48 | [google](https://drive.google.com/file/d/1MRRgMX8l5FFaFZb81YjqfcjCFgYYDMak/view?usp=sharing) / [baidu(k2dp)](https://pan.baidu.com/s/1fOSbDup5x2pootf3dtPb8Q) / 51M| 
+|Spconv2.1 | [VirConv-T](tools/cfgs/models/kitti/VirConv-T.yaml)|~13 GB| 94.91 |90.36 |88.10 | [google](https://drive.google.com/file/d/123ndzJIwo01DvQIBzy_GnussuuXkhwji/view?usp=sharing) / [baidu(a4r4)](https://pan.baidu.com/s/1ueAUwj57DIEgF7NBKtgCmA) / 56M|
+|Spconv2.1 | [VirConv-S](tools/cfgs/models/kitti/VirConv-S.yaml)|~13 GB| 95.76 |90.91 |88.61 | [google](https://drive.google.com/file/d/1-ztIQdhAi2MnTI6pBKxUeqWZnwlDxDH3/view?usp=sharing) / [baidu(j3mi)](https://pan.baidu.com/s/1iJUjR7IehRBk1WSacvd2Yg) / 56M|
 
 
 ## Getting Started

@@ -68,7 +68,7 @@ def compute_WBF(det_names,
             cluster_box_dict[argmax].append(box)
             cluster_score_dict[argmax].append(score)
         elif iou_thresh2 <= max_iou < iou_thresh and score > score_thresh and retain_low:
-            if np.max(cluster_score_dict[argmax])-score < 0.2:
+            if np.max(cluster_score_dict[argmax])-score < 0.1:
                 out_scores.append(score_thresh)
                 out_boxes.append(box)
                 out_name.append(name)
