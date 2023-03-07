@@ -1,6 +1,6 @@
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=hailanyi/VirConv)
 # Virtual Sparse Convolution for Multimodal 3D Object Detection
-This is a official code release of [VirConv](https://arxiv.org/) (Virtual Sparse Convolution for 3D Object Detection). 
+This is a official code release of [VirConv](https://arxiv.org/abs/2303.02314) (Virtual Sparse Convolution for 3D Object Detection). 
 This code is mainly based on [OpenPCDet](https://github.com/open-mmlab/OpenPCDet), some codes are from [TED](https://github.com/hailanyi/TED), 
 [CasA](https://github.com/hailanyi/CasA), [PENet](https://github.com/JUGGHM/PENet_ICRA2021) and [SFD](https://github.com/LittlePey/SFD).
 
@@ -29,7 +29,7 @@ We release three models: VirConv-L, VirConv-T and VirConv-S.
 
 Train multiple times on 8xV100 and choose the best:
 
-Environment|              Detector                   | GPU (train)| Easy | Mod. \[AP range\] | Hard  | download | 
+Environment|              Detector                   | GPU (train)| Easy | Mod. | Hard  | download | 
 |------|---------------------------------------------|:----------:|:-------:|:-------:|:-------:|:---------:|
 |Spconv1.2 | [VirConv-L](tools/cfgs/models/kitti/VirConv-L.yaml)|~7 GB | 93.08 |88.51 |86.69 | [google](https://drive.google.com/file/d/1UwH4ArmKCAPlFV6XjRmVrqClgrvc1M1q/view?usp=sharing) / [baidu(05u2)](https://pan.baidu.com/s/1Q-hvk-u6bA72EFhcc5IIwA) / 51M| 
 |Spconv1.2 | [VirConv-T](tools/cfgs/models/kitti/VirConv-T.yaml)|~13 GB| 94.58 |89.87 |87.78 | [google](https://drive.google.com/file/d/1Y3Q0x0pDran0Bqqg1CulL0geYwIkDQvu/view?usp=sharing) / [baidu(or81)](https://pan.baidu.com/s/1CkMi5YYKjBfi4sgnx20fIw) / 55M|
@@ -37,7 +37,7 @@ Environment|              Detector                   | GPU (train)| Easy | Mod. 
 
 Train multiple times on 8xV100 and choose the best:
 
-Environment|              Detector                   |GPU (train) | Easy | Mod. \[AP range\] | Hard  | download | 
+Environment|              Detector                   |GPU (train) | Easy | Mod. | Hard  | download | 
 |------|---------------------------------------------|:----------:|:-------:|:-------:|:-------:|:---------:|
 |Spconv2.1 | [VirConv-L](tools/cfgs/models/kitti/VirConv-L.yaml)|~7 GB | 93.18 |88.23 |85.48 | [google](https://drive.google.com/file/d/1MRRgMX8l5FFaFZb81YjqfcjCFgYYDMak/view?usp=sharing) / [baidu(k2dp)](https://pan.baidu.com/s/1fOSbDup5x2pootf3dtPb8Q) / 51M| 
 |Spconv2.1 | [VirConv-T](tools/cfgs/models/kitti/VirConv-T.yaml)|~13 GB| 94.91 |90.36 |88.10 | [google](https://drive.google.com/file/d/123ndzJIwo01DvQIBzy_GnussuuXkhwji/view?usp=sharing) / [baidu(a4r4)](https://pan.baidu.com/s/1ueAUwj57DIEgF7NBKtgCmA) / 56M|
