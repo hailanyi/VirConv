@@ -1,5 +1,5 @@
 numpy
-torch>=1.1
+torch=1.8.1
 numba
 tensorboardX
 easydict
