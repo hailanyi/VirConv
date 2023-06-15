@@ -1,4 +1,4 @@
-![visitors](https://visitor-badge.glitch.me/badge?page_id=hailanyi/VirConv)
+
 # Virtual Sparse Convolution for Multimodal 3D Object Detection
 This is a official code release of [VirConv](https://arxiv.org/abs/2303.02314) (Virtual Sparse Convolution for 3D Object Detection). 
 This code is mainly based on [OpenPCDet](https://github.com/open-mmlab/OpenPCDet), some codes are from [TED](https://github.com/hailanyi/TED), 
