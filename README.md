@@ -76,7 +76,7 @@ We also tested on.
 
 ### Prepare dataset
 
-You need creat additional ```semi``` dataset and ```velodyne_depth``` dataset to run our multimodal and semi-supervised detectors.
+You must creat additional ```semi``` dataset and ```velodyne_depth``` dataset to run our multimodal and semi-supervised detectors.
 
 * You can download all the preprocessed data from
 [baidu (japc)](https://pan.baidu.com/s/1idoCSVndT2mImcGN4lFSNQ) \[74GB\],
