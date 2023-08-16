@@ -194,7 +194,7 @@ You can run ```cat log.txt``` to view the training process.
 
 **For training the VirConv-S:**
 
-You need first train a VirConv-T:
+You should firstly train a VirConv-T:
 ```
 cd tools
 python3 train.py --cfg_file cfgs/models/kitti/VirConv-T.yaml
@@ -219,7 +219,7 @@ cd tools
 python3 test.py --cfg_file cfgs/models/kitti/VirConv-S.yaml --ckpt VirConv-S.pth
 ```
 
-Multiple GPU test: you need modify the gpu number in the dist_test.sh and run
+Multiple GPU test: you should modify the gpu number in the dist_test.sh and run
 ```
 sh dist_test.sh 
 ```
