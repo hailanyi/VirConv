@@ -70,7 +70,7 @@ class KittiDataset(DatasetTemplate):
         return np.array(io.imread(img_file).shape[:2], dtype=np.int32)
 
     def get_label(self, idx):
-        label_file = self.root_split_path / 'label_2_semi' / ('%s.txt' % idx)
+        label_file = self.root_split_path / 'label_2' / ('%s.txt' % idx)
         assert label_file.exists()
         return object3d_kitti.get_objects_from_label(label_file)
 
