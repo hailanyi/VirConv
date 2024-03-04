@@ -45,6 +45,12 @@ Environment|              Detector                   |GPU (train) | Easy | Mod. 
 
 
 ## Getting Started
+```
+conda create -n spconv2 python=3.9
+conda activate spconv2
+pip install numpy==1.19.5 protobuf==3.19.4 scikit-image==0.19.2 waymo-open-dataset-tf-2-2-0 nuscenes-devkit==1.0.5 spconv-cu111 numba scipy pyyaml easydict fire tqdm shapely matplotlib opencv-python addict pyquaternion awscli open3d pandas future pybind11 tensorboardX tensorboard Cython
+pip install torch==1.8.1+cu111 torchvision==0.9.1+cu111 torchaudio==0.8.1 -f https://download.pytorch.org/whl/torch_stable.html
+```
 ### Dependency
 Our released implementation is tested on.
 + Ubuntu 18.04
@@ -54,6 +60,7 @@ Our released implementation is tested on.
 + Spconv 1.2.1
 + NVIDIA CUDA 11.1
 + 8x Tesla V100 GPUs
+
 
 We also tested on.
 + Ubuntu 18.04
