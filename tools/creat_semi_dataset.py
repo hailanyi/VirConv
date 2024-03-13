@@ -5,10 +5,13 @@ def list_dirs(root=r'L:\data\kitti\odometry\dataset\sequences'):
     all_frames = []
 
     all_seq = os.listdir(root)
+    all_seq.sort()
+    
     for seq_name in all_seq:
         seq_path = os.path.join(root, seq_name)
         seq_path_velodyne = os.path.join(seq_path, 'velodyne')
         all_velo_frame_name = os.listdir(seq_path_velodyne)
+        all_velo_frame_name.sort()
         seq_path_image_2 = os.path.join(seq_path, 'image_2')
         seq_path_calib = os.path.join(seq_path, 'calib.txt')
 
